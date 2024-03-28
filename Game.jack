@@ -1,0 +1,76 @@
+class Game
+{    
+    field int willBeUsed;
+
+    constructor Game new() 
+    {
+        let willBeUsed = 0;
+        return this;
+    }
+
+    method void StartScreen() 
+    {
+        var int loadingProgress;
+        let loadingProgress = 0;
+
+        do loadingProcess();
+
+        do Output.moveCursor(5, 5); 
+        do Output.printString("BRICK MADNESS");
+
+        do Output.moveCursor(7, 7);
+        do Output.printString("by Barkhatova A, Iarmoshenko A. and Zaitsev M.");
+
+        do Output.moveCursor(8, 8);
+        do Output.printString("UrFU, FIIT, 2024");
+
+        do Output.moveCursor(10, 10);
+        do Output.printString("Press any key to start");
+
+        while (Keyboard.keyPressed() = 0) 
+        {
+            do Sys.wait(10);
+        }
+
+        return;
+    }
+
+    method void loadingProcess() 
+    {
+        do showLoadingPercentage(0, 200, "Initializing...");
+        do showLoadingPercentage(7, 600, "Extraction and preparation of clay...");
+        do showLoadingPercentage(15, 500, "Extraction and preparation of clay...");
+        do showLoadingPercentage(22, 700, "Extraction and preparation of clay...");
+        do showLoadingPercentage(27, 600, "Brick molding...");
+        do showLoadingPercentage(32, 700, "Drying brick...");
+        do showLoadingPercentage(38, 1000, "Brick firing...");
+        do showLoadingPercentage(45, 1500, "Cooling bricks after firing...");
+        do showLoadingPercentage(62, 1000, "Organazing a bricks factory...");
+        do showLoadingPercentage(72, 1000, "Creating different types of bricks...");
+        do showLoadingPercentage(89, 700, "Preparing the board...");
+        do showLoadingPercentage(92, 200, "Creating the borders...");
+        do showLoadingPercentage(94, 100, "Placing the bricks...");
+        do showLoadingPercentage(95, 100, "Creating a score counter...");
+        do showLoadingPercentage(96, 100, "Placing a score counter...");
+        do showLoadingPercentage(97, 100, "Adjusting game settings...");
+        do showLoadingPercentage(98, 700, "Finalizing graphics...");
+        do showLoadingPercentage(146, 2000, "DONE!");
+        return;
+    }
+
+    method void showLoadingPercentage(int percent, int waitTime, string message) 
+    {
+        do Output.moveCursor(5, 5);
+        do Output.printString("Loading: ");
+        do Output.printInt(percent);
+        do Output.printString("%");
+
+        do Output.moveCursor(7, 5);
+        do Output.printString(message);
+
+        do Sys.wait(waitTime);
+        do Screen.clearScreen();
+
+        return;
+    }
+}
