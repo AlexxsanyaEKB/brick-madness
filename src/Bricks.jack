@@ -1,53 +1,34 @@
-class Bricks {
-    field Array tetraminos;
+class Bricks 
+{
+    field Array bricks;
     field int size;
 
-    constructor Bricks new() {
-        var Array pieceI;
-        var Array pieceJ;
-        var Array pieceL;
-        var Array pieceO;
-        var Array pieceS;
-        var Array pieceT;
-        var Array pieceZ;
-        var Array pieceX;
-
-        var Array pieceRow0;
-        var Array pieceRow1;
-        var Array pieceRow2;
-        var Array pieceRow3;
-
+    constructor Bricks new() 
+    {
         let size = 8;
-        let tetraminos = Array.new(size);
+        let bricks = Array.new(size);
 
-        let pieceI = Array.new(4);
-        let pieceJ = Array.new(4);
-        let pieceL = Array.new(4);
-        let pieceO = Array.new(4);
-        let pieceS = Array.new(4);
-        let pieceT = Array.new(4);
-        let pieceZ = Array.new(4);
-        let pieceX = Array.new(4);
+        let bricks[0] = drawBrickI();
+        let bricks[1] = drawBrickJ();
+        let bricks[2] = drawBrickL();
+        let bricks[3] = drawBrickO();
+        let bricks[4] = drawBrickS();
+        let bricks[5] = drawBrickT();
+        let bricks[6] = drawBrickZ();
+        let bricks[7] = drawBrickX();
 
-        let tetraminos[0] = pieceI;
-        let tetraminos[1] = pieceJ;
-        let tetraminos[2] = pieceL;
-        let tetraminos[3] = pieceO;
-        let tetraminos[4] = pieceS;
-        let tetraminos[5] = pieceT;
-        let tetraminos[6] = pieceZ;
-        let tetraminos[7] = pieceX;
+        return this;
+    }
 
-        // Define piece I
+    method Array drawBrickI()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceI[0] = pieceRow0;
-        let pieceI[1] = pieceRow1;
-        let pieceI[2] = pieceRow2;
-        let pieceI[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(0, 1);
         let pieceRow0[1] = Point.new(1, 1);
@@ -73,16 +54,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(1, 3);
         let pieceRow3[4] = Point.new(1, 4);
 
-        // Define piece J
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    } 
+
+    method Array drawBrickJ()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceJ[0] = pieceRow0;
-        let pieceJ[1] = pieceRow1;
-        let pieceJ[2] = pieceRow2;
-        let pieceJ[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(0, 1);
         let pieceRow0[1] = Point.new(1, 1);
@@ -108,16 +96,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(0, 0);
         let pieceRow3[4] = Point.new(1, 3);
 
-        // Define piece L
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    }
+
+    method Array drawBrickL()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceL[0] = pieceRow0;
-        let pieceL[1] = pieceRow1;
-        let pieceL[2] = pieceRow2;
-        let pieceL[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(0, 1);
         let pieceRow0[1] = Point.new(1, 1);
@@ -143,16 +138,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(2, 0);
         let pieceRow3[4] = Point.new(1, 3);
 
-        // Define piece O
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    }
+
+    method Array drawBrickO()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceO[0] = pieceRow0;
-        let pieceO[1] = pieceRow1;
-        let pieceO[2] = pieceRow2;
-        let pieceO[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(1, 1);
         let pieceRow0[1] = Point.new(2, 1);
@@ -178,16 +180,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(1, 2);
         let pieceRow3[4] = Point.new(1, 0);
 
-        // Define piece S
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    }
+
+    method Array drawBrickS()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceS[0] = pieceRow0;
-        let pieceS[1] = pieceRow1;
-        let pieceS[2] = pieceRow2;
-        let pieceS[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(1, 2);
         let pieceRow0[1] = Point.new(2, 2);
@@ -213,16 +222,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(2, 2);
         let pieceRow3[4] = Point.new(2, 3);
 
-        // Define piece T
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    }
+
+    method Array drawBrickT()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceT[0] = pieceRow0;
-        let pieceT[1] = pieceRow1;
-        let pieceT[2] = pieceRow2;
-        let pieceT[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(2, 0);
         let pieceRow0[1] = Point.new(2, 1);
@@ -248,16 +264,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(2, 1);
         let pieceRow3[4] = Point.new(2, 3);
 
-        // Define piece Z
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    }
+
+    method Array drawBrickZ()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceZ[0] = pieceRow0;
-        let pieceZ[1] = pieceRow1;
-        let pieceZ[2] = pieceRow2;
-        let pieceZ[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(1, 0);
         let pieceRow0[1] = Point.new(2, 0);
@@ -283,16 +306,23 @@ class Bricks {
         let pieceRow3[3] = Point.new(3, 1);
         let pieceRow3[4] = Point.new(3, 0);
 
-        // Define piece X
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
+    }
+
+    method Array drawBrickX()
+    {
+        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        
+        let brick = Array.new(4);
         let pieceRow0 = Array.new(5);
         let pieceRow1 = Array.new(5);
         let pieceRow2 = Array.new(5);
         let pieceRow3 = Array.new(5);
-
-        let pieceX[0] = pieceRow0;
-        let pieceX[1] = pieceRow1;
-        let pieceX[2] = pieceRow2;
-        let pieceX[3] = pieceRow3;
 
         let pieceRow0[0] = Point.new(1, 0);
         let pieceRow0[1] = Point.new(1, 1);
@@ -318,20 +348,27 @@ class Bricks {
         let pieceRow3[3] = Point.new(0, 1);
         let pieceRow3[4] = Point.new(2, 1);
 
-        return this;
+        let brick[0] = pieceRow0;
+        let brick[1] = pieceRow1;
+        let brick[2] = pieceRow2;
+        let brick[3] = pieceRow3;
+
+        return brick;
     }
 
-    method Point get(int pieceNum, int rowNum, int colNum) {
-        var Array piece;
+    method Point get(int pieceIndex, int rowIndex, int columnIndex) 
+    {
+        var Array brick;
         var Array pieceRow;
 
-        let piece = tetraminos[pieceNum];
-        let pieceRow = piece[rowNum];
+        let brick = bricks[pieceIndex];
+        let pieceRow = brick[rowIndex];
 
-        return pieceRow[colNum];
+        return pieceRow[columnIndex];
     }
 
-    method int getSize() {
+    method int getSize() 
+    {
         return size;
     }
 }
