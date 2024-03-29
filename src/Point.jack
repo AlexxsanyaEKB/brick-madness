@@ -2,7 +2,7 @@ class Point
 {
     field int x, y;
 
-    constructor Point new(int givenX, int given) 
+    constructor Point new(int givenX, int givenY) 
     {
         let x = givenX;
         let y = givenY;
@@ -26,7 +26,7 @@ class Point
         return;
     }
 
-    method void setY(int given) 
+    method void setY(int givenY) 
     {
         let y = givenY;
         return;
