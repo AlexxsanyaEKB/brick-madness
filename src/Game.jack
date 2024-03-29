@@ -12,8 +12,8 @@ class Game
     method void startScreen() 
     {
         do loadingProcess();
-        do PrintTitle();
-        do PrintAuthorInfo();
+        do printTitle();
+        do printAuthorInfo();
 
         while (Keyboard.keyPressed() = 0) 
         {
@@ -24,7 +24,7 @@ class Game
         return;
     }
 
-    method void PrintTitle()
+    method void printTitle()
     {
         do Output.moveCursor(5, 6); 
         do Output.printString("### ### ### ### # #   #   # ### ##  #  # ### ### ###");
@@ -44,7 +44,7 @@ class Game
         return;
     }
 
-    method void PrintAuthorInfo()
+    method void printAuthorInfo()
     {
         do Output.moveCursor(12, 20);
         do Output.printString("Press any key to start");
@@ -127,11 +127,13 @@ class Game
                 {
                     let brickRows[heightPosition] = true;
                 }
-                if (widthPosition = (screenWidth - 1)) 
+
+                if (widthPosition = screenWidth - 1) 
                 {
                     let brickRows[heightPosition] = true;
                 }
-                if (heightPosition = (screenHeight - 1)) 
+
+                if (heightPosition = screenHeight - 1) 
                 {
                     let brickRows[heightPosition] = true;
                 }
@@ -172,7 +174,7 @@ class Game
 
             let widthPosition = widthPosition + 1;
         }
-        
+
         return;
     }
 }
