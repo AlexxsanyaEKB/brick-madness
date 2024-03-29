@@ -5,7 +5,9 @@ class Main
         var Game game;
         let game = Game.new(); 
 
-        do game.StartScreen();
+        do game.startScreen();
+        do game.createZone();
+
         return;
     }
 }

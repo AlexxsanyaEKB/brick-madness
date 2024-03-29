@@ -1,6 +1,7 @@
 class Game
 {    
     field int willBeUsed;
+    field Array bricks;
 
     constructor Game new() 
     {
@@ -8,13 +9,23 @@ class Game
         return this;
     }
 
-    method void StartScreen() 
+    method void startScreen() 
     {
-        var int loadingProgress;
-        let loadingProgress = 0;
-
         do loadingProcess();
+        do PrintTitle();
+        do PrintAuthorInfo();
 
+        while (Keyboard.keyPressed() = 0) 
+        {
+            do Sys.wait(10);
+        }
+
+        do Screen.clearScreen();
+        return;
+    }
+
+    method void PrintTitle()
+    {
         do Output.moveCursor(5, 6); 
         do Output.printString("### ### ### ### # #   #   # ### ##  #  # ### ### ###");
 
@@ -30,6 +41,11 @@ class Game
         do Output.moveCursor(9, 6); 
         do Output.printString("### # # ### ### # #   #   # # # ##  #  # ### ### ###");
 
+        return;
+    }
+
+    method void PrintAuthorInfo()
+    {
         do Output.moveCursor(12, 20);
         do Output.printString("Press any key to start");
 
@@ -38,11 +54,6 @@ class Game
 
         do Output.moveCursor(20, 24);
         do Output.printString("UrFU, FIIT, 2024");
-
-        while (Keyboard.keyPressed() = 0) 
-        {
-            do Sys.wait(10);
-        }
 
         return;
     }
@@ -83,6 +94,85 @@ class Game
         do Sys.wait(waitTime);
         do Screen.clearScreen();
 
+        return;
+    }
+
+    method void createZone()
+    {
+        do initializeZone();
+        do drawZone();
+        return;
+    }
+
+    method void initializeZone() 
+    {
+        var int widthPosition, heightPosition, screenWidth, screenHeight;
+        var Array brickRows;
+        
+        let widthPosition = 19;
+        let screenHeight = 28;
+        let screenWidth = 32;
+        let bricks = Array.new(screenWidth);
+        
+        while (widthPosition < screenWidth) 
+        {
+            let brickRows = Array.new(screenHeight);
+            let heightPosition = 0;
+            
+            while (heightPosition < screenHeight) 
+            {
+                let brickRows[heightPosition] = false;
+
+                if (widthPosition = 19) 
+                {
+                    let brickRows[heightPosition] = true;
+                }
+                if (widthPosition = (screenWidth - 1)) 
+                {
+                    let brickRows[heightPosition] = true;
+                }
+                if (heightPosition = (screenHeight - 1)) 
+                {
+                    let brickRows[heightPosition] = true;
+                }
+
+                let heightPosition = heightPosition + 1;
+            }
+
+            let bricks[widthPosition] = brickRows;
+            let widthPosition = widthPosition + 1; 
+        }
+
+        return;
+    }
+
+    method void drawZone() 
+    {
+        var int widthPosition, heightPosition, x, y, screenWidth, screenHeight;
+        var Array brickRows;
+
+        let widthPosition = 19;
+        let screenHeight = 28;
+        let screenWidth = 32;
+
+        while (widthPosition < screenWidth) 
+        {
+            let brickRows = bricks[widthPosition];
+            let heightPosition = 0;
+
+            while (heightPosition < screenHeight) 
+            {
+                let x = widthPosition * 9;
+                let y = heightPosition * 9;
+
+                do Screen.setColor(brickRows[heightPosition]);
+                do Screen.drawRectangle(x, y, x + 8, y + 8);
+                let heightPosition = heightPosition + 1;
+            }
+
+            let widthPosition = widthPosition + 1;
+        }
+        
         return;
     }
 }
