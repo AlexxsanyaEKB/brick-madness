@@ -128,12 +128,12 @@ class Game
                     let brickRows[heightPosition] = true;
                 }
 
-                if (widthPosition = screenWidth - 1) 
+                if (widthPosition = (screenWidth - 1)) 
                 {
                     let brickRows[heightPosition] = true;
                 }
 
-                if (heightPosition = screenHeight - 1) 
+                if (heightPosition = (screenHeight - 1)) 
                 {
                     let brickRows[heightPosition] = true;
                 }
