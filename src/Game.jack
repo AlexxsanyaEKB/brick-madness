@@ -74,7 +74,7 @@ class Game
 
     method void loadingProcess() 
     {
-        /**do showLoadingPercentage(0, 300, "Initializing...");
+        do showLoadingPercentage(0, 300, "Initializing...");
         do showLoadingPercentage(7, 200, "Extraction and preparation of clay...");
         do showLoadingPercentage(15, 300, "Extraction and preparation of clay...");
         do showLoadingPercentage(22, 400, "Extraction and preparation of clay...");
@@ -91,7 +91,7 @@ class Game
         do showLoadingPercentage(96, 100, "Placing a score counter...");
         do showLoadingPercentage(97, 100, "Adjusting game settings...");
         do showLoadingPercentage(98, 700, "Finalizing graphics...");
-        do showLoadingPercentage(100, 2000, "DONE!");*/
+        do showLoadingPercentage(100, 2000, "DONE!");
         return;
     }
 
