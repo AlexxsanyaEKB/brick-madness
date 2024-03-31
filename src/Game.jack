@@ -65,35 +65,36 @@ class Game
 
     method void loadingProcess() 
     {
-        do showLoadingPercentage(0, 300, "Initializing...");
-        do showLoadingPercentage(7, 200, "Extraction and preparation of clay...");
-        do showLoadingPercentage(15, 300, "Extraction and preparation of clay...");
-        do showLoadingPercentage(22, 400, "Extraction and preparation of clay...");
-        do showLoadingPercentage(27, 200, "Brick molding...");
-        do showLoadingPercentage(32, 300, "Drying checkingBrick...");
-        do showLoadingPercentage(38, 300, "Brick firing...");
-        do showLoadingPercentage(45, 500, "Cooling bricks after firing...");
-        do showLoadingPercentage(62, 300, "Organazing a bricks factory...");
-        do showLoadingPercentage(72, 400, "Creating different types of bricks...");
-        do showLoadingPercentage(89, 300, "Preparing the board...");
-        do showLoadingPercentage(92, 200, "Creating the borders...");
-        do showLoadingPercentage(94, 100, "Placing the bricks...");
-        do showLoadingPercentage(95, 100, "Creating a score counter...");
-        do showLoadingPercentage(96, 100, "Placing a score counter...");
-        do showLoadingPercentage(97, 100, "Adjusting game settings...");
-        do showLoadingPercentage(98, 700, "Finalizing graphics...");
-        do showLoadingPercentage(100, 2000, "DONE!");
+        do showLoadingPercentage(0, 1000, "Waking up the clay from its nap...");
+        do showLoadingPercentage(7, 1000, "Teaching the clay how to dance salsa...");
+        do showLoadingPercentage(15, 1000, "Clay spa day: mud masks included...");
+        do showLoadingPercentage(22, 1000, "Clay karaoke night: 'I Will Survive'...");
+        do showLoadingPercentage(27, 1000, "Brick aerobics class in session...");
+        do showLoadingPercentage(32, 1000, "Jazz hands for the brick drying...");
+        do showLoadingPercentage(38, 1000, "Firing up the bricks: time to get toasty...");
+        do showLoadingPercentage(45, 1000, "Chilling with the bricks after their hot date...");
+        do showLoadingPercentage(62, 1000, "Bricks practicing synchronized swimming...");
+        do showLoadingPercentage(72, 1000, "Fashion show: brick edition...");
+        do showLoadingPercentage(89, 1000, "Brick Olympics training camp...");
+        do showLoadingPercentage(92, 1000, "Brick runway walk rehearsal...");
+        do showLoadingPercentage(94, 1000, "Playing Jenga with the bricks...");
+        do showLoadingPercentage(95, 1000, "Teaching the score counter to do the cha-cha...");
+        do showLoadingPercentage(96, 1000, "Putting a tiara on the score counter...");
+        do showLoadingPercentage(97, 1000, "Dialing up the game settings to maximum fun...");
+        do showLoadingPercentage(98, 1000, "Sprinkling fairy dust on the final graphics...");
+        do showLoadingPercentage(100, 2000, "ALAKAZAM!!!!!!!!!!!!! The magical loading is complete!");
+
         return;
     }
 
     method void showLoadingPercentage(int percent, int waitTime, string message) 
     {
-        do Output.moveCursor(10, 18);
+        do Output.moveCursor(10, 3);
         do Output.printString("Loading: ");
         do Output.printInt(percent);
         do Output.printString("%");
 
-        do Output.moveCursor(12, 18);
+        do Output.moveCursor(12, 3);
         do Output.printString(message);
 
         do Sys.wait(waitTime);
