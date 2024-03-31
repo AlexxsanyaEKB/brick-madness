@@ -22,336 +22,336 @@ class Bricks
 
     method Array drawBrickI()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(0, 1);
-        let pieceRow0[1] = Point.new(1, 1);
-        let pieceRow0[2] = Point.new(2, 1);
-        let pieceRow0[3] = Point.new(3, 1);
-        let pieceRow0[4] = Point.new(4, 1);
+        let brickRow0[0] = Point.new(0, 1);
+        let brickRow0[1] = Point.new(1, 1);
+        let brickRow0[2] = Point.new(2, 1);
+        let brickRow0[3] = Point.new(3, 1);
+        let brickRow0[4] = Point.new(4, 1);
 
-        let pieceRow1[0] = Point.new(1, 0);
-        let pieceRow1[1] = Point.new(1, 1);
-        let pieceRow1[2] = Point.new(1, 2);
-        let pieceRow1[3] = Point.new(1, 3);
-        let pieceRow1[4] = Point.new(1, 4);
+        let brickRow1[0] = Point.new(1, 0);
+        let brickRow1[1] = Point.new(1, 1);
+        let brickRow1[2] = Point.new(1, 2);
+        let brickRow1[3] = Point.new(1, 3);
+        let brickRow1[4] = Point.new(1, 4);
 
-        let pieceRow2[0] = Point.new(0, 1);
-        let pieceRow2[1] = Point.new(1, 1);
-        let pieceRow2[2] = Point.new(2, 1);
-        let pieceRow2[3] = Point.new(3, 1);
-        let pieceRow2[4] = Point.new(4, 1);
+        let brickRow2[0] = Point.new(0, 1);
+        let brickRow2[1] = Point.new(1, 1);
+        let brickRow2[2] = Point.new(2, 1);
+        let brickRow2[3] = Point.new(3, 1);
+        let brickRow2[4] = Point.new(4, 1);
 
-        let pieceRow3[0] = Point.new(1, 0);
-        let pieceRow3[1] = Point.new(1, 1);
-        let pieceRow3[2] = Point.new(1, 2);
-        let pieceRow3[3] = Point.new(1, 3);
-        let pieceRow3[4] = Point.new(1, 4);
+        let brickRow3[0] = Point.new(1, 0);
+        let brickRow3[1] = Point.new(1, 1);
+        let brickRow3[2] = Point.new(1, 2);
+        let brickRow3[3] = Point.new(1, 3);
+        let brickRow3[4] = Point.new(1, 4);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     } 
 
     method Array drawBrickJ()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(0, 1);
-        let pieceRow0[1] = Point.new(1, 1);
-        let pieceRow0[2] = Point.new(2, 1);
-        let pieceRow0[3] = Point.new(3, 1);
-        let pieceRow0[4] = Point.new(3, 0);
+        let brickRow0[0] = Point.new(0, 1);
+        let brickRow0[1] = Point.new(1, 1);
+        let brickRow0[2] = Point.new(2, 1);
+        let brickRow0[3] = Point.new(3, 1);
+        let brickRow0[4] = Point.new(3, 0);
 
-        let pieceRow1[0] = Point.new(1, 0);
-        let pieceRow1[1] = Point.new(1, 1);
-        let pieceRow1[2] = Point.new(1, 2);
-        let pieceRow1[3] = Point.new(1, 3);
-        let pieceRow1[4] = Point.new(2, 3);
+        let brickRow1[0] = Point.new(1, 0);
+        let brickRow1[1] = Point.new(1, 1);
+        let brickRow1[2] = Point.new(1, 2);
+        let brickRow1[3] = Point.new(1, 3);
+        let brickRow1[4] = Point.new(2, 3);
 
-        let pieceRow2[0] = Point.new(0, 1);
-        let pieceRow2[1] = Point.new(1, 1);
-        let pieceRow2[2] = Point.new(2, 1);
-        let pieceRow2[3] = Point.new(0, 2);
-        let pieceRow2[4] = Point.new(3, 1);
+        let brickRow2[0] = Point.new(0, 1);
+        let brickRow2[1] = Point.new(1, 1);
+        let brickRow2[2] = Point.new(2, 1);
+        let brickRow2[3] = Point.new(0, 2);
+        let brickRow2[4] = Point.new(3, 1);
 
-        let pieceRow3[0] = Point.new(1, 0);
-        let pieceRow3[1] = Point.new(1, 1);
-        let pieceRow3[2] = Point.new(1, 2);
-        let pieceRow3[3] = Point.new(0, 0);
-        let pieceRow3[4] = Point.new(1, 3);
+        let brickRow3[0] = Point.new(1, 0);
+        let brickRow3[1] = Point.new(1, 1);
+        let brickRow3[2] = Point.new(1, 2);
+        let brickRow3[3] = Point.new(0, 0);
+        let brickRow3[4] = Point.new(1, 3);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
 
     method Array drawBrickL()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(0, 1);
-        let pieceRow0[1] = Point.new(1, 1);
-        let pieceRow0[2] = Point.new(2, 1);
-        let pieceRow0[3] = Point.new(3, 2);
-        let pieceRow0[4] = Point.new(3, 1);
+        let brickRow0[0] = Point.new(0, 1);
+        let brickRow0[1] = Point.new(1, 1);
+        let brickRow0[2] = Point.new(2, 1);
+        let brickRow0[3] = Point.new(3, 2);
+        let brickRow0[4] = Point.new(3, 1);
 
-        let pieceRow1[0] = Point.new(1, 0);
-        let pieceRow1[1] = Point.new(1, 1);
-        let pieceRow1[2] = Point.new(1, 2);
-        let pieceRow1[3] = Point.new(0, 3);
-        let pieceRow1[4] = Point.new(1, 3);
+        let brickRow1[0] = Point.new(1, 0);
+        let brickRow1[1] = Point.new(1, 1);
+        let brickRow1[2] = Point.new(1, 2);
+        let brickRow1[3] = Point.new(0, 3);
+        let brickRow1[4] = Point.new(1, 3);
 
-        let pieceRow2[0] = Point.new(0, 1);
-        let pieceRow2[1] = Point.new(1, 1);
-        let pieceRow2[2] = Point.new(2, 1);
-        let pieceRow2[3] = Point.new(0, 0);
-        let pieceRow2[4] = Point.new(3, 1);
+        let brickRow2[0] = Point.new(0, 1);
+        let brickRow2[1] = Point.new(1, 1);
+        let brickRow2[2] = Point.new(2, 1);
+        let brickRow2[3] = Point.new(0, 0);
+        let brickRow2[4] = Point.new(3, 1);
 
-        let pieceRow3[0] = Point.new(1, 0);
-        let pieceRow3[1] = Point.new(1, 1);
-        let pieceRow3[2] = Point.new(1, 2);
-        let pieceRow3[3] = Point.new(2, 0);
-        let pieceRow3[4] = Point.new(1, 3);
+        let brickRow3[0] = Point.new(1, 0);
+        let brickRow3[1] = Point.new(1, 1);
+        let brickRow3[2] = Point.new(1, 2);
+        let brickRow3[3] = Point.new(2, 0);
+        let brickRow3[4] = Point.new(1, 3);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
 
     method Array drawBrickO()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(1, 1);
-        let pieceRow0[1] = Point.new(2, 1);
-        let pieceRow0[2] = Point.new(2, 2);
-        let pieceRow0[3] = Point.new(1, 2);
-        let pieceRow0[4] = Point.new(3, 1);
+        let brickRow0[0] = Point.new(1, 1);
+        let brickRow0[1] = Point.new(2, 1);
+        let brickRow0[2] = Point.new(2, 2);
+        let brickRow0[3] = Point.new(1, 2);
+        let brickRow0[4] = Point.new(3, 1);
 
-        let pieceRow1[0] = Point.new(1, 1);
-        let pieceRow1[1] = Point.new(2, 1);
-        let pieceRow1[2] = Point.new(2, 2);
-        let pieceRow1[3] = Point.new(1, 2);
-        let pieceRow1[4] = Point.new(2, 3);
+        let brickRow1[0] = Point.new(1, 1);
+        let brickRow1[1] = Point.new(2, 1);
+        let brickRow1[2] = Point.new(2, 2);
+        let brickRow1[3] = Point.new(1, 2);
+        let brickRow1[4] = Point.new(2, 3);
 
-        let pieceRow2[0] = Point.new(1, 1);
-        let pieceRow2[1] = Point.new(2, 1);
-        let pieceRow2[2] = Point.new(2, 2);
-        let pieceRow2[3] = Point.new(1, 2);
-        let pieceRow2[4] = Point.new(0, 2);
+        let brickRow2[0] = Point.new(1, 1);
+        let brickRow2[1] = Point.new(2, 1);
+        let brickRow2[2] = Point.new(2, 2);
+        let brickRow2[3] = Point.new(1, 2);
+        let brickRow2[4] = Point.new(0, 2);
 
-        let pieceRow3[0] = Point.new(1, 1);
-        let pieceRow3[1] = Point.new(2, 1);
-        let pieceRow3[2] = Point.new(2, 2);
-        let pieceRow3[3] = Point.new(1, 2);
-        let pieceRow3[4] = Point.new(1, 0);
+        let brickRow3[0] = Point.new(1, 1);
+        let brickRow3[1] = Point.new(2, 1);
+        let brickRow3[2] = Point.new(2, 2);
+        let brickRow3[3] = Point.new(1, 2);
+        let brickRow3[4] = Point.new(1, 0);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
 
     method Array drawBrickS()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(1, 2);
-        let pieceRow0[1] = Point.new(2, 2);
-        let pieceRow0[2] = Point.new(2, 1);
-        let pieceRow0[3] = Point.new(3, 1);
-        let pieceRow0[4] = Point.new(4, 1);
+        let brickRow0[0] = Point.new(1, 2);
+        let brickRow0[1] = Point.new(2, 2);
+        let brickRow0[2] = Point.new(2, 1);
+        let brickRow0[3] = Point.new(3, 1);
+        let brickRow0[4] = Point.new(4, 1);
 
-        let pieceRow1[0] = Point.new(1, 1);
-        let pieceRow1[1] = Point.new(1, 2);
-        let pieceRow1[2] = Point.new(2, 2);
-        let pieceRow1[3] = Point.new(2, 3);
-        let pieceRow1[4] = Point.new(2, 4);
+        let brickRow1[0] = Point.new(1, 1);
+        let brickRow1[1] = Point.new(1, 2);
+        let brickRow1[2] = Point.new(2, 2);
+        let brickRow1[3] = Point.new(2, 3);
+        let brickRow1[4] = Point.new(2, 4);
 
-        let pieceRow2[0] = Point.new(0, 2);
-        let pieceRow2[1] = Point.new(1, 2);
-        let pieceRow2[2] = Point.new(2, 2);
-        let pieceRow2[3] = Point.new(2, 1);
-        let pieceRow2[4] = Point.new(3, 1);
+        let brickRow2[0] = Point.new(0, 2);
+        let brickRow2[1] = Point.new(1, 2);
+        let brickRow2[2] = Point.new(2, 2);
+        let brickRow2[3] = Point.new(2, 1);
+        let brickRow2[4] = Point.new(3, 1);
 
-        let pieceRow3[0] = Point.new(1, 0);
-        let pieceRow3[1] = Point.new(1, 1);
-        let pieceRow3[2] = Point.new(1, 2);
-        let pieceRow3[3] = Point.new(2, 2);
-        let pieceRow3[4] = Point.new(2, 3);
+        let brickRow3[0] = Point.new(1, 0);
+        let brickRow3[1] = Point.new(1, 1);
+        let brickRow3[2] = Point.new(1, 2);
+        let brickRow3[3] = Point.new(2, 2);
+        let brickRow3[4] = Point.new(2, 3);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
 
     method Array drawBrickT()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(2, 0);
-        let pieceRow0[1] = Point.new(2, 1);
-        let pieceRow0[2] = Point.new(2, 2);
-        let pieceRow0[3] = Point.new(1, 2);
-        let pieceRow0[4] = Point.new(3, 2);
+        let brickRow0[0] = Point.new(2, 0);
+        let brickRow0[1] = Point.new(2, 1);
+        let brickRow0[2] = Point.new(2, 2);
+        let brickRow0[3] = Point.new(1, 2);
+        let brickRow0[4] = Point.new(3, 2);
 
-        let pieceRow1[0] = Point.new(2, 1);
-        let pieceRow1[1] = Point.new(2, 2);
-        let pieceRow1[2] = Point.new(2, 3);
-        let pieceRow1[3] = Point.new(3, 2);
-        let pieceRow1[4] = Point.new(4, 2);
+        let brickRow1[0] = Point.new(2, 1);
+        let brickRow1[1] = Point.new(2, 2);
+        let brickRow1[2] = Point.new(2, 3);
+        let brickRow1[3] = Point.new(3, 2);
+        let brickRow1[4] = Point.new(4, 2);
 
-        let pieceRow2[0] = Point.new(1, 2);
-        let pieceRow2[1] = Point.new(2, 2);
-        let pieceRow2[2] = Point.new(3, 2);
-        let pieceRow2[3] = Point.new(2, 3);
-        let pieceRow2[4] = Point.new(2, 4);
+        let brickRow2[0] = Point.new(1, 2);
+        let brickRow2[1] = Point.new(2, 2);
+        let brickRow2[2] = Point.new(3, 2);
+        let brickRow2[3] = Point.new(2, 3);
+        let brickRow2[4] = Point.new(2, 4);
 
-        let pieceRow3[0] = Point.new(0, 2);
-        let pieceRow3[1] = Point.new(1, 2);
-        let pieceRow3[2] = Point.new(2, 2);
-        let pieceRow3[3] = Point.new(2, 1);
-        let pieceRow3[4] = Point.new(2, 3);
+        let brickRow3[0] = Point.new(3, 1);
+        let brickRow3[1] = Point.new(3, 2);
+        let brickRow3[2] = Point.new(3, 3);
+        let brickRow3[3] = Point.new(2, 2);
+        let brickRow3[4] = Point.new(1, 2);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
 
     method Array drawBrickZ()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(1, 0);
-        let pieceRow0[1] = Point.new(2, 0);
-        let pieceRow0[2] = Point.new(2, 1);
-        let pieceRow0[3] = Point.new(2, 2);
-        let pieceRow0[4] = Point.new(3, 2);
+        let brickRow0[0] = Point.new(1, 0);
+        let brickRow0[1] = Point.new(2, 0);
+        let brickRow0[2] = Point.new(2, 1);
+        let brickRow0[3] = Point.new(2, 2);
+        let brickRow0[4] = Point.new(3, 2);
 
-        let pieceRow1[0] = Point.new(1, 2);
-        let pieceRow1[1] = Point.new(1, 1);
-        let pieceRow1[2] = Point.new(2, 1);
-        let pieceRow1[3] = Point.new(3, 1);
-        let pieceRow1[4] = Point.new(3, 0);
+        let brickRow1[0] = Point.new(1, 2);
+        let brickRow1[1] = Point.new(1, 1);
+        let brickRow1[2] = Point.new(2, 1);
+        let brickRow1[3] = Point.new(3, 1);
+        let brickRow1[4] = Point.new(3, 0);
 
-        let pieceRow2[0] = Point.new(1, 0);
-        let pieceRow2[1] = Point.new(2, 0);
-        let pieceRow2[2] = Point.new(2, 1);
-        let pieceRow2[3] = Point.new(2, 2);
-        let pieceRow2[4] = Point.new(3, 2);
+        let brickRow2[0] = Point.new(1, 0);
+        let brickRow2[1] = Point.new(2, 0);
+        let brickRow2[2] = Point.new(2, 1);
+        let brickRow2[3] = Point.new(2, 2);
+        let brickRow2[4] = Point.new(3, 2);
 
-        let pieceRow3[0] = Point.new(1, 2);
-        let pieceRow3[1] = Point.new(1, 1);
-        let pieceRow3[2] = Point.new(2, 1);
-        let pieceRow3[3] = Point.new(3, 1);
-        let pieceRow3[4] = Point.new(3, 0);
+        let brickRow3[0] = Point.new(1, 2);
+        let brickRow3[1] = Point.new(1, 1);
+        let brickRow3[2] = Point.new(2, 1);
+        let brickRow3[3] = Point.new(3, 1);
+        let brickRow3[4] = Point.new(3, 0);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
 
     method Array drawBrickX()
     {
-        var Array pieceRow0, pieceRow1, pieceRow2, pieceRow3, brick;
+        var Array brickRow0, brickRow1, brickRow2, brickRow3, brick;
         
         let brick = Array.new(4);
-        let pieceRow0 = Array.new(5);
-        let pieceRow1 = Array.new(5);
-        let pieceRow2 = Array.new(5);
-        let pieceRow3 = Array.new(5);
+        let brickRow0 = Array.new(5);
+        let brickRow1 = Array.new(5);
+        let brickRow2 = Array.new(5);
+        let brickRow3 = Array.new(5);
 
-        let pieceRow0[0] = Point.new(1, 0);
-        let pieceRow0[1] = Point.new(1, 1);
-        let pieceRow0[2] = Point.new(1, 2);
-        let pieceRow0[3] = Point.new(0, 1);
-        let pieceRow0[4] = Point.new(2, 1);
+        let brickRow0[0] = Point.new(1, 0);
+        let brickRow0[1] = Point.new(1, 1);
+        let brickRow0[2] = Point.new(1, 2);
+        let brickRow0[3] = Point.new(0, 1);
+        let brickRow0[4] = Point.new(2, 1);
 
-        let pieceRow1[0] = Point.new(1, 0);
-        let pieceRow1[1] = Point.new(1, 1);
-        let pieceRow1[2] = Point.new(1, 2);
-        let pieceRow1[3] = Point.new(0, 1);
-        let pieceRow1[4] = Point.new(2, 1);
+        let brickRow1[0] = Point.new(1, 0);
+        let brickRow1[1] = Point.new(1, 1);
+        let brickRow1[2] = Point.new(1, 2);
+        let brickRow1[3] = Point.new(0, 1);
+        let brickRow1[4] = Point.new(2, 1);
 
-        let pieceRow2[0] = Point.new(1, 0);
-        let pieceRow2[1] = Point.new(1, 1);
-        let pieceRow2[2] = Point.new(1, 2);
-        let pieceRow2[3] = Point.new(0, 1);
-        let pieceRow2[4] = Point.new(2, 1);
+        let brickRow2[0] = Point.new(1, 0);
+        let brickRow2[1] = Point.new(1, 1);
+        let brickRow2[2] = Point.new(1, 2);
+        let brickRow2[3] = Point.new(0, 1);
+        let brickRow2[4] = Point.new(2, 1);
 
-        let pieceRow3[0] = Point.new(1, 0);
-        let pieceRow3[1] = Point.new(1, 1);
-        let pieceRow3[2] = Point.new(1, 2);
-        let pieceRow3[3] = Point.new(0, 1);
-        let pieceRow3[4] = Point.new(2, 1);
+        let brickRow3[0] = Point.new(1, 0);
+        let brickRow3[1] = Point.new(1, 1);
+        let brickRow3[2] = Point.new(1, 2);
+        let brickRow3[3] = Point.new(0, 1);
+        let brickRow3[4] = Point.new(2, 1);
 
-        let brick[0] = pieceRow0;
-        let brick[1] = pieceRow1;
-        let brick[2] = pieceRow2;
-        let brick[3] = pieceRow3;
+        let brick[0] = brickRow0;
+        let brick[1] = brickRow1;
+        let brick[2] = brickRow2;
+        let brick[3] = brickRow3;
 
         return brick;
     }
@@ -359,12 +359,12 @@ class Bricks
     method Point get(int pieceIndex, int rowIndex, int columnIndex) 
     {
         var Array brick;
-        var Array pieceRow;
+        var Array brickRow;
 
         let brick = bricks[pieceIndex];
-        let pieceRow = brick[rowIndex];
+        let brickRow = brick[rowIndex];
 
-        return pieceRow[columnIndex];
+        return brickRow[columnIndex];
     }
 
     method int getSize() 
