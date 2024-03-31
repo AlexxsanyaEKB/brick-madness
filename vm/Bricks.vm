@@ -1,0 +1,2125 @@
+function Bricks.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push constant 8
+pop this 1
+push this 1
+call Array.new 1
+pop this 0
+push constant 0
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickI 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickJ 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickL 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickO 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickS 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickT 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickZ 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push this 0
+add
+push pointer 0
+call Bricks.drawBrickX 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push pointer 0
+return
+function Bricks.drawBrickI 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 4
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 1
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 1
+push constant 4
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 4
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 1
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 1
+push constant 4
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickJ 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 3
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 1
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 2
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 0
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 0
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 1
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickL 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 0
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 1
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 0
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 2
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 1
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickO 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 2
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 0
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickS 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 4
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 2
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 2
+push constant 4
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 0
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 2
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickT 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 2
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 2
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 4
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 2
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 2
+push constant 4
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 3
+push constant 3
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickZ 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 2
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 3
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 2
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 2
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 3
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 3
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 3
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.drawBrickX 5
+push argument 0
+pop pointer 0
+push constant 4
+call Array.new 1
+pop local 4
+push constant 5
+call Array.new 1
+pop local 0
+push constant 5
+call Array.new 1
+pop local 1
+push constant 5
+call Array.new 1
+pop local 2
+push constant 5
+call Array.new 1
+pop local 3
+push constant 0
+push local 0
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 1
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 1
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 1
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 1
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 1
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 2
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 3
+add
+push constant 1
+push constant 0
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 3
+add
+push constant 1
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 3
+add
+push constant 1
+push constant 2
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 3
+add
+push constant 0
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 3
+add
+push constant 2
+push constant 1
+call Point.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 4
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 4
+add
+push local 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 4
+add
+push local 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 4
+add
+push local 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+return
+function Bricks.get 2
+push argument 0
+pop pointer 0
+push argument 1
+push this 0
+add
+pop pointer 1
+push that 0
+pop local 0
+push argument 2
+push local 0
+add
+pop pointer 1
+push that 0
+pop local 1
+push argument 3
+push local 1
+add
+pop pointer 1
+push that 0
+return
+function Bricks.getSize 0
+push argument 0
+pop pointer 0
+push this 1
+return
