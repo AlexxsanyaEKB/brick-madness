@@ -1,11 +1,25 @@
 class Game
 {    
-    field int willBeUsed;
-    field Array bricks;
+    field boolean isGameOver;
+    field int thisBrickIndex, thisBrickRotation, screenHeight, screenWidth, score;
+    field Array wallsAndBricks;
+    field Bricks bricks;
+    field Point thisBrickPosition;
 
     constructor Game new() 
     {
-        let willBeUsed = 0;
+        var int i, j;
+        var Array gameZoneRows;
+
+        let isGameOver = false;
+        let bricks = Bricks.new();
+        let i = 0;
+        let score = 0;
+        let thisBrickIndex = 0;
+        let thisBrickRotation = 0;
+        let screenHeight = 25;
+        let screenWidth = 32;
+
         return this;
     }
 
@@ -60,12 +74,12 @@ class Game
 
     method void loadingProcess() 
     {
-        do showLoadingPercentage(0, 300, "Initializing...");
+        /**do showLoadingPercentage(0, 300, "Initializing...");
         do showLoadingPercentage(7, 200, "Extraction and preparation of clay...");
         do showLoadingPercentage(15, 300, "Extraction and preparation of clay...");
         do showLoadingPercentage(22, 400, "Extraction and preparation of clay...");
         do showLoadingPercentage(27, 200, "Brick molding...");
-        do showLoadingPercentage(32, 300, "Drying brick...");
+        do showLoadingPercentage(32, 300, "Drying checkingBrick...");
         do showLoadingPercentage(38, 300, "Brick firing...");
         do showLoadingPercentage(45, 500, "Cooling bricks after firing...");
         do showLoadingPercentage(62, 300, "Organazing a bricks factory...");
@@ -77,7 +91,7 @@ class Game
         do showLoadingPercentage(96, 100, "Placing a score counter...");
         do showLoadingPercentage(97, 100, "Adjusting game settings...");
         do showLoadingPercentage(98, 700, "Finalizing graphics...");
-        do showLoadingPercentage(100, 2000, "DONE!");
+        do showLoadingPercentage(100, 2000, "DONE!");*/
         return;
     }
 
@@ -97,78 +111,25 @@ class Game
         return;
     }
 
-    method void createZone()
-    {
-        do initializeZone();
-        do drawZone();
-        return;
-    }
-
-    method void initializeZone() 
-    {
-        var int widthPosition, heightPosition, screenWidth, screenHeight;
-        var Array brickRows;
-        
-        let widthPosition = 19;
-        let screenHeight = 28;
-        let screenWidth = 32;
-        let bricks = Array.new(screenWidth);
-        
-        while (widthPosition < screenWidth) 
-        {
-            let brickRows = Array.new(screenHeight);
-            let heightPosition = 0;
-            
-            while (heightPosition < screenHeight) 
-            {
-                let brickRows[heightPosition] = false;
-
-                if (widthPosition = 19) 
-                {
-                    let brickRows[heightPosition] = true;
-                }
-
-                if (widthPosition = (screenWidth - 1)) 
-                {
-                    let brickRows[heightPosition] = true;
-                }
-
-                if (heightPosition = (screenHeight - 1)) 
-                {
-                    let brickRows[heightPosition] = true;
-                }
-
-                let heightPosition = heightPosition + 1;
-            }
-
-            let bricks[widthPosition] = brickRows;
-            let widthPosition = widthPosition + 1; 
-        }
-
-        return;
-    }
-
     method void drawZone() 
     {
-        var int widthPosition, heightPosition, x, y, screenWidth, screenHeight;
-        var Array brickRows;
+        var int widthPosition, heightPosition, x, y;
+        var Array wallsRows;
 
         let widthPosition = 19;
-        let screenHeight = 28;
-        let screenWidth = 32;
 
         while (widthPosition < screenWidth) 
         {
-            let brickRows = bricks[widthPosition];
+            let wallsRows = wallsAndBricks[widthPosition];
             let heightPosition = 0;
 
             while (heightPosition < screenHeight) 
             {
-                let x = widthPosition * 9;
-                let y = heightPosition * 9;
+                let x = widthPosition * 10;
+                let y = heightPosition * 10;
 
-                do Screen.setColor(brickRows[heightPosition]);
-                do Screen.drawRectangle(x, y, x + 8, y + 8);
+                do Screen.setColor(wallsRows[heightPosition]);
+                do Screen.drawRectangle(x, y, x + 9, y + 9);
                 let heightPosition = heightPosition + 1;
             }
 
@@ -177,4 +138,327 @@ class Game
 
         return;
     }
+
+    method boolean isOver()
+    {  
+        return isGameOver;
+    }
+
+    method void prepareGameZone() 
+    {
+        var int i, j;
+        var Array brickRows;
+        
+        let i = 0;
+        let wallsAndBricks = Array.new(screenWidth);
+        
+        while (i < screenWidth) 
+        {
+            let brickRows = Array.new(screenHeight);
+            let j = 0;
+            
+            while (j < screenHeight) 
+            {
+                let brickRows[j] = false;
+
+                if (i = 19) 
+                {
+                    let brickRows[j] = true;
+                }
+
+                if (i = (screenWidth - 1) & i > 19) 
+                {
+                    let brickRows[j] = true;
+                }
+
+                if (j = (screenHeight - 1)) 
+                {
+                    let brickRows[j] = true;
+                }
+
+                let j = j + 1;
+            }
+
+            let wallsAndBricks[i] = brickRows;
+            let i = i + 1; 
+        }
+
+        do drawZone();
+        return;
+    }
+
+    method void updateGamestate() 
+    {
+        do drawBricks();
+        do drawThisBrick();
+        do printScore();
+        return;
+    }
+
+    method void initializeNextBrick() 
+    {
+        let thisBrickPosition = Point.new(25, 0);
+        let thisBrickRotation = 0;
+        let thisBrickIndex = thisBrickIndex + 1;
+
+        if (thisBrickIndex = bricks.getSize()) 
+        {
+            let thisBrickIndex = 0;
+        }
+
+        do updateGamestate();
+        return;
+    }
+    
+    method boolean isThereObstacle(int x, int y, int rotation) 
+    {
+        var Point brickPoint;
+        var boolean checkingBrickbrick;
+        var int i;
+        let i = 0;
+
+        while (i < 5) 
+        {
+            let brickPoint = bricks.get(thisBrickIndex, thisBrickRotation, i);
+            let checkingBrickbrick = getBrick(brickPoint.getX() + x, brickPoint.getY() + y);
+
+            if (checkingBrickbrick) 
+            {
+                return true;
+            } 
+
+            let i = i + 1;
+        }
+        return false;
+    }
+
+    method void rotate(int i) 
+    {
+        var int newRotation;
+        let newRotation = thisBrickRotation + i;
+
+        if (newRotation = 4) 
+        {
+            let newRotation = 0;
+        }
+
+        if (newRotation = -1) 
+        {
+            let newRotation = 3;
+        }
+
+        if (~isThereObstacle(thisBrickPosition.getX(), thisBrickPosition.getY(), newRotation)) 
+        {
+            let thisBrickRotation = newRotation;
+        }
+
+        return;
+    }
+
+    method void move(int i) 
+    {
+        if (~isThereObstacle(thisBrickPosition.getX() + i, thisBrickPosition.getY(), thisBrickRotation)) 
+        {
+            do thisBrickPosition.setX(thisBrickPosition.getX() + i);
+        }
+
+        return;
+    }
+
+    method void drop() 
+    {
+        if (isThereObstacle(thisBrickPosition.getX(), thisBrickPosition.getY() + 1, thisBrickRotation)) 
+        {
+            do fixBrickPosition();
+        } 
+        else 
+        {
+            do thisBrickPosition.setY(thisBrickPosition.getY() + 1);
+        }
+
+        do updateGamestate();
+        return;
+    }
+
+    method void fixBrickPosition() 
+    {
+        var Point brickPoint;
+        var int i;
+        let i = 0;
+
+        while (i < 5) 
+        {
+            let brickPoint = bricks.get(thisBrickIndex, thisBrickRotation, i);
+            let i = i + 1;
+            do setBrick(thisBrickPosition.getX() + brickPoint.getX(), thisBrickPosition.getY() + brickPoint.getY(), true);
+        }
+
+        do tryClearRows();
+        do initializeNextBrick();
+
+        if (isThereObstacle(thisBrickPosition.getX(), thisBrickPosition.getY(), thisBrickRotation)) 
+        {
+            let isGameOver = true;
+        }
+
+        return;
+    }
+
+    method void tryClearRows() 
+    {
+        var boolean willClearRows;
+        var int i, j;
+        let j = screenHeight - 2;
+
+        while (j > 0) 
+        {
+            let willClearRows = true;
+            let i = 20;
+
+            while (i < (screenWidth - 1)) 
+            {
+                if (willClearRows) 
+                {
+                    if (~getBrick(i, j)) 
+                    {
+                       let willClearRows = false;
+                    }
+                }
+
+                let i = i + 1;
+            }
+
+            if (willClearRows) 
+            {
+                do clearOneRow(j);
+                let score = score + 1;
+            } 
+            else 
+            {
+                let j = j - 1;
+            }
+        }
+        return;
+    }
+
+    method void clearOneRow(int row) 
+    {
+        var int i, j;
+        let j = row - 1;
+
+        while (j > 0) 
+        {
+            let i = 1;
+
+            while (i < (screenWidth - 1)) 
+            {
+                do setBrick(i, j+1, getBrick(i, j));
+                let i = i + 1;
+            }
+
+            let j = j - 1;
+        }
+        return;
+    }
+
+    method void drawThisBrick() 
+    {
+        var Point brickPoint;
+        var int i, thickness, x, y;
+
+        let thickness = 10;
+        let i = 0;
+
+        do Screen.setColor(true);
+
+        while (i < 5) {
+            let brickPoint = bricks.get(thisBrickIndex, thisBrickRotation, i);
+            let x = (brickPoint.getX() + thisBrickPosition.getX()) * thickness;
+            let y = (brickPoint.getY() + thisBrickPosition.getY()) * thickness;
+
+            do Screen.drawRectangle(x, y, x + thickness-2, y + thickness-2);
+
+            let i = i + 1;
+        }
+        return;
+    }
+
+    method void printScore() 
+    {
+        do Output.moveCursor(22, 2);
+        do Output.printString("SCORE: ");
+        do Output.printInt(score);
+        return;
+    }
+
+    method void processKey() {
+        var char key;
+        let key = Keyboard.keyPressed();
+
+        if (key = 130) 
+        {
+            do move(-1);
+            do updateGamestate();
+        }
+
+        if (key = 131) 
+        {
+            do rotate(-1);
+            do updateGamestate();
+        }
+
+        if (key = 132) 
+        {
+            do move(1);
+            do updateGamestate();
+        }
+
+        if (key = 133) 
+        {
+            do drop();
+        }
+
+        return;
+    }
+
+    method boolean getBrick(int x, int y) 
+    {
+        var Array rows;
+        let rows = wallsAndBricks[x];
+        return rows[y];
+    }
+
+    method void setBrick(int x, int y, boolean brick) 
+    {
+        var Array rows;
+        let rows = wallsAndBricks[x];
+        let rows[y] = brick;
+        return;
+    }
+
+    method void drawBricks() 
+    {
+        var int i, j;
+        var int x, y;
+        var Array brickRows;
+
+        let i = 19;
+
+        while (i < screenWidth) {
+            let brickRows = wallsAndBricks[i];
+            let j = 0;
+
+            while (j < screenHeight) {
+                let x = i * 10;
+                let y = j * 10;
+
+                do Screen.setColor(brickRows[j]);
+                do Screen.drawRectangle(x, y, x + 10 - 2, y + 10 - 2);
+                let j = j + 1;
+            }
+            let i = i + 1;
+        }
+        return;
+    }
+
 }

@@ -2,12 +2,37 @@ class Main
 {
     function void main() 
     {
+        var int time;
         var Game game;
+        let time = 0;
         let game = Game.new(); 
 
         do game.startScreen();
-        do game.createZone();
 
+        do Screen.clearScreen();
+        do game.prepareGameZone();
+        do game.initializeNextBrick();
+
+        while (~game.isOver()) 
+        {
+            let time = time + 1;
+            do game.processKey();
+            
+            if (time = 15) 
+            {
+                let time = 0;
+            }
+
+            if (time = 0) 
+            {
+                do game.drop();
+            }
+            
+            do Sys.wait(10);
+        }
+
+        do Output.moveCursor(10, 2);
+        do Output.printString("Game Over!");
         return;
     }
 }
